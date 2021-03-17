@@ -1,0 +1,278 @@
+body{
+    font-family: arial,sans-serif;
+}
+
+/* header menubar */
+.nav-bar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+.menu-bar{
+    margin: 20px;
+}
+
+.nav-bar ul{
+    list-style: none;
+    padding: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: arial,sans-serif;
+    color: black;
+}
+
+.menu a:hover{
+    text-decoration:underline;
+}
+
+.login{
+    background-color: #2b7de9;
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    color: white;
+    border-radius: 4px ;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 12px;
+    outline: none;
+}
+
+.login:hover{
+    background-color: #3a8cf7;
+    cursor: inherit;
+}
+
+.login:active{
+    opacity : 0.6;
+}
+
+.menu-bar .pic_icon{
+    width: 25px;
+    padding-right: 10px;
+}
+/* picture google */
+
+.container{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+}
+
+.pic-google{
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* box google */
+
+.box-main{
+    height: 110px;
+    margin-top: 20px;
+    /* background-color: slateblue; */
+}
+
+.box-search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.flex-box{
+    width: 70%px
+    position: relative;
+}
+
+.search{
+    width: 572px;
+    height: 34px;
+    display:flex;
+    justify-content: center;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 300px;
+    padding-left: 3rem;
+    }
+
+@media screen and ( max-width : 768px ){
+    .flex-box{
+        width: 80%;
+    }
+
+    .search{
+        width: 872px;
+    }
+}
+@media screen and ( max-width : 675px ){
+    .flex-box{
+        width: 80%;
+    }
+    
+    .search{
+        width: 872px;
+    }
+}
+
+.search:hover{
+    box-shadow: 0px 0px 6px 0px rgba(100, 100, 100, 0.4);
+}
+
+.search_pic{
+    opacity: 0.6;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    top: 8.5px;
+    left: 15px;
+}
+
+.flex-box input{
+    width: 100%;
+    outline: none !important;
+}
+
+.tia_pic{
+    width: 24px;
+    position: absolute;
+    top: 12px;
+    right: 60px;
+}
+
+.mic_pic{
+    width: 13px;
+    position: absolute;
+    top: 8px;
+    right: 30px;
+}
+
+
+.tia_pic:hover{
+    cursor: inherit;
+}
+
+.mic_pic:hover{
+    cursor: inherit;
+}
+
+
+.box-google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-google button{
+    background-color: rgb(247, 247, 247);
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    padding: 8px 15px;
+    margin: 0px 4px;
+    border-radius: 6px ;
+    border: none;
+    outline: none;
+}
+
+.box-google button:hover{
+    border:1px solid rgb(136, 136, 136);
+    cursor: inherit;
+}
+
+.box-google button:active{
+    border: 1px solid rgb(64, 64, 255);
+}
+
+/*google*/
+.google{
+    font-size: 12px;
+    height: 236px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+/* foolter */
+.container-foolter{
+    background-color: rgb(245, 245, 245);
+    color: rgb(116, 116, 116);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+}
+
+.language{
+    height : calc(100% / 2);
+    font-family: arial,sans-serif;
+    border-bottom: 1px solid rgb(197, 197, 197) ;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.last-bar{
+    width : 100%;
+    height: 50px;
+    font-family: arial,sans-serif;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and ( max-width : 768px ){
+    .last-bar{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+}
+
+@media screen and ( max-width : 675px ){
+    .last-bar{
+        font-size: 15px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .bar2{
+        margin-top: 10px;
+    }
+}
+
+.last-bar ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0%;
+}
+
+.last-bar li{
+    margin-right: 25px;
+}
+
+.last-bar a{
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+}
+
+.last-bar li:hover{
+    /* border-bottom:1px solid olivedrab ; */
+    text-decoration : underline;
+}
